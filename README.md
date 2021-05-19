@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/weizengke/libcli.svg?branch=master)](https://travis-ci.com/weizengke/libcli)
+
 # libcli
 一个command-line-interface封装库
 
