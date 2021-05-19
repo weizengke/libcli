@@ -37,7 +37,7 @@ user(>)
      - diagnose(diagnose)
 */
 
-#define CMD_debug(x, args...) /* printf(args) */
+#define CMD_debug(x, ...) /* printf(args) */
 
 #define CMD_VIEW_SONS_NUM 128
 
