@@ -1,0 +1,5 @@
+language: c++
+c++:
+- 8.2
+before_script:
+- composer install
