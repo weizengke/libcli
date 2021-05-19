@@ -16,16 +16,5 @@ branches:
 script:
     - mkdir build
     - cd build
-    - if [[ ${TRAVIS_OS_NAME} == "windows" ]]; then
-        cmake -DCMAKE_GENERATOR_PLATFORM=x64 ..;
-      else
-        if [ $OS == "arm32_linux" ]; then
-          export CC=arm-linux-gnueabihf-gcc;
-          export CXX=arm-linux-gnueabihf-g++;
-          export AR=arm-linux-gnueabihf-ar;
-          cmake -DARM32_BUILD=TRUE ..;
-        else
-          cmake ..;
-        fi
-      fi
+    - cmake ..
     - cmake --build . --config release
