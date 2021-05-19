@@ -26,7 +26,7 @@ else ()
 	message(STATUS "other platform: ${CMAKE_SYSTEM_NAME}")
 endif (CMAKE_SYSTEM_NAME MATCHES "Linux")
 
-add_definitions("-w -c -m32 -std=gnu++0x -DGTEST_ENABLE")
+add_definitions("-w -c -std=gnu++0x -DGTEST_ENABLE")
 
 message("CMAKE_CXX_FLAGS_RELEASE=${CMAKE_CXX_FLAGS_RELEASE}")
 message("CMAKE_C_FLAGS_RELEASE=${CMAKE_C_FLAGS_RELEASE}")
