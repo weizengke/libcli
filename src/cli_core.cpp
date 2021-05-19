@@ -37,7 +37,7 @@
 #include "cli_reg.h"
 #include "cli_hook.h"
 
-#define CMD_debug(x, args...) /* printf(args) */
+#define CMD_debug(x, ...) /* printf(args) */
 
 #define CMD_CON_NAME "CON"
 #define CMD_CFM_NAME "CFM"
